@@ -5,6 +5,7 @@ from verda._version import __version__
 from verda.authentication import AuthenticationService
 from verda.balance import BalanceService
 from verda.constants import Constants
+from verda.container_types import ContainerTypesService
 from verda.containers import ContainersService
 from verda.http_client import HTTPClient
 from verda.images import ImagesService
@@ -21,6 +22,7 @@ __all__ = [
     'AuthenticationService',
     'BalanceService',
     'Constants',
+    'ContainerTypesService',
     'ContainersService',
     'DataCrunchClient',
     'HTTPClient',

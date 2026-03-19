@@ -2,6 +2,7 @@ from verda._version import __version__
 from verda.authentication import AuthenticationService
 from verda.balance import BalanceService
 from verda.clusters import ClustersService
+from verda.container_types import ContainerTypesService
 from verda.constants import Constants
 from verda.containers import ContainersService
 from verda.http_client import HTTPClient
@@ -79,6 +80,9 @@ class VerdaClient:
 
         self.containers: ContainersService = ContainersService(self._http_client, inference_key)
         """Containers service. Deploy, manage, and monitor container deployments"""
+
+        self.container_types: ContainerTypesService = ContainerTypesService(self._http_client)
+        """Container types service. Get available serverless container SKUs"""
 
         self.clusters: ClustersService = ClustersService(self._http_client)
         """Clusters service. Create and manage compute clusters"""
