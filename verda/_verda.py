@@ -10,6 +10,7 @@ from verda.http_client import HTTPClient
 from verda.images import ImagesService
 from verda.instance_types import InstanceTypesService
 from verda.instances import InstancesService
+from verda.long_term import LongTermService
 from verda.locations import LocationsService
 from verda.ssh_keys import SSHKeysService
 from verda.startup_scripts import StartupScriptsService
@@ -90,6 +91,9 @@ class VerdaClient:
 
         self.cluster_types: ClusterTypesService = ClusterTypesService(self._http_client)
         """Cluster types service. Get available cluster SKUs"""
+
+        self.long_term: LongTermService = LongTermService(self._http_client)
+        """Long-term service. Get available long-term pricing periods"""
 
 
 __all__ = ['VerdaClient']

@@ -12,6 +12,7 @@ from verda.http_client import HTTPClient
 from verda.images import ImagesService
 from verda.instance_types import InstanceTypesService
 from verda.instances import InstancesService
+from verda.long_term import LongTermService
 from verda.locations import LocationsService
 from verda.ssh_keys import SSHKeysService
 from verda.startup_scripts import StartupScriptsService
@@ -31,6 +32,7 @@ __all__ = [
     'ImagesService',
     'InstanceTypesService',
     'InstancesService',
+    'LongTermService',
     'LocationsService',
     'SSHKeysService',
     'StartupScriptsService',

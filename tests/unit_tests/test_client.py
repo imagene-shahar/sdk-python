@@ -28,6 +28,7 @@ class TestVerdaClient:
         assert client.constants.base_url == BASE_URL
         assert hasattr(client, 'container_types')
         assert hasattr(client, 'cluster_types')
+        assert hasattr(client, 'long_term')
 
     @responses.activate
     def test_client_with_default_base_url(self):
